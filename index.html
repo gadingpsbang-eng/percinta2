@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tembak Cewek Sederhana</title>
+     <style>
+        * {
+             margin: 0px;
+             padding: 0px;
+             box-sizing: border-box;
+        }
+
+        body  {
+             background-color: aqua;
+             font-family: Arial, Helvetica, sans-serif;
+             color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+            width: 100px;
+            margin: 40px auto;
+            margin-top: 250px;
+            height: 150px;
+            background-color: rgb(255, 255, 255);
+            padding: 150px;
+            border-radius:10px;
+            border: 1px solid black;
+            box-shadow: 0 0 10px black;
+
+        }
+
+        .text h2 {
+            text-align: center;
+            color: rgb(7, 174, 252);
+        }
+
+        .text img {
+             margin-top: 10px;
+             border-radius: 10px;
+    
+        }
+
+        .submit {
+            padding: 5px;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            margin-top:1px;
+        }
+
+        .Hubungi{
+            padding: 5px;
+            border-radius: 5px;
+            background-color:red;
+            color: white;
+
+        }
+
+        .submit:hover {
+             background-color: white;
+             color: black;
+        }
+
+        .Hubungi:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .submit {
+    transition: transform 0.3s ease;
+}
+
+.submit:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.Hubungi {
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+
+        
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+             <h2>Halo Cantik</h2>
+            <img src="gambar/download.jpg" alt="gambar">
+            <button id="submit" class="submit">Mau</button>
+            <button id="Hubungi" class="Hubungi">Gak Mau</button>
+
+        </div>
+    </div>
+</body>
+ <script>
+  document.getElementById("submit").onclick = function () {
+    alert("Yeaay! Sekarang kamu resmi jadi pacar aku 😳💘");
+};
+
+document.getElementById("Hubungi").onclick = function () {
+    alert("Serius gak mau? 😭 Kasih aku alasan dong...");
+};
+
+const btnMau = document.getElementById("submit");
+const btnTidak = document.getElementById("Hubungi");
+
+btnMau.onclick = function () {
+    alert("Yeaay! Sekarang kamu resmi jadi pacar aku 😳💘");
+};
+
+btnTidak.onclick = function () {
+    alert("Serius gak mau? 😭 Kasih aku alasan dong...");
+};
+
+btnTidak.onmouseover = function () {
+    const randomX = Math.random() * 200 - 100;  
+    const randomY = Math.random() * 200 - 100;  
+    btnTidak.style.transform = `translate(${randomX}px, ${randomY}px)`;
+};
+
+
+btnMau.onclick = function () {
+    alert("Mulai hari ini, aku janji bakal jaga kamu.");
+    alert("Gak bakal aku lepas, meski kamu marah sekalipun.");
+    alert("Karena kamu sudah jadi alasan aku bahagia 💘");
+    alert("Makasih sudah memilih aku 😳❤️");
+};
+
+ </script>
+
+</html>
